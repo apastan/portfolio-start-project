@@ -3,18 +3,29 @@ import {FlexContainer} from "../../components/styled/FlexContainer";
 import {Logo} from "../../components/logo/Logo";
 import {Menu} from "../../components/menu/Menu";
 import {Socilas} from "../../components/socials/Socilas";
+import styled from "styled-components";
 
 export function Header() {
     return (
         // TODO - Create Styled header
-        <FlexContainer as={"header"} justifyContent={"space-between"}>
+        <StyledHeader>
             <Logo/>
 
-            <FlexContainer>
+            <FlexWrapper>
                 <Menu/>
                 <Socilas/>
-            </FlexContainer>
-        </FlexContainer>
+            </FlexWrapper>
+        </StyledHeader>
     );
 }
 
+const StyledHeader = styled.header`
+    display: flex;
+    justify-content: space-between;
+    padding-right: 11px;
+`
+
+const FlexWrapper = styled.div`
+    display: flex;
+    gap: 51px; 
+`
