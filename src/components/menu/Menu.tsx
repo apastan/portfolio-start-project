@@ -1,11 +1,11 @@
 import React from 'react';
-import {FlexContainer} from "../styled/FlexContainer";
+import styled from "styled-components";
 
 
 export function Menu() {
     return (
-        <nav>
-            <FlexContainer as={"ul"}>
+        <StyledNav>
+            <ul>
                 {/*TODO - Add link to id attribute*/}
                 <li>
                     <a href="#">Home</a>
@@ -22,7 +22,16 @@ export function Menu() {
                 <li>
                     <a href="#">Contact</a>
                 </li>
-            </FlexContainer>
-        </nav>
+            </ul>
+        </StyledNav>
     );
 }
+
+const StyledNav = styled.nav`
+    ul {
+        display: flex;
+        gap: 60px; // На мекете дичь
+        list-style-type: none;
+    }
+    
+`
