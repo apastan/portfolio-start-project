@@ -2,12 +2,14 @@ import './App.css';
 import styled from 'styled-components';
 import {Header} from "./layout/header/Header";
 import {Main} from "./layout/sections/main/Main";
+import {Technologies} from "./layout/sections/technologies/Technologies";
 
 function App() {
     return (
         <StyledApp>
             <Header/>
             <Main/>
+            <Technologies/>
         </StyledApp>
     );
 }
