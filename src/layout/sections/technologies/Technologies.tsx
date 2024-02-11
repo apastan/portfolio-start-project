@@ -2,11 +2,12 @@ import React from 'react';
 import styled from "styled-components";
 import {FlexContainer} from "../../../components/styled/FlexContainer";
 import {Icon} from "../../../components/icon/Icon";
+import {SectionTitle} from "../../../components/styled/SectionTitle";
 
 export function Technologies() {
     return (
         <StyledTechnologies>
-            <h2>My Tech Stack</h2>
+            <SectionTitle>My Tech Stack</SectionTitle>
             <h3>Technologies I’ve been working with recently</h3>
             <FlexContainer alignItems={"center"} flexWrap={"wrap"}>
                 <Icon iconId={"html"} height={"105"} width={"96"} viewBox={"0 0 120 120"}/>
