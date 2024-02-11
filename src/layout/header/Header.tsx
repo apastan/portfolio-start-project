@@ -1,20 +1,20 @@
 import React from 'react';
+import {FlexContainer} from "../../components/styled/FlexContainer";
+import {Logo} from "../../components/logo/Logo";
 
 export function Header() {
     return (
         // TODO - Create Styled header
-        <header>
-            <a href="#">
-                {/*TODO - insert logo and fill alt attribute*/}
-                <img src="" alt=""/>
-            </a>
+        <FlexContainer as={"header"} justifyContent={"space-between"}>
+            {/*TODO Create Logo component*/}
+            <Logo/>
 
             {/*TODO - Flex container*/}
-            <div>
+            <FlexContainer>
                 {/*TODO - Add FlexContainer styled component*/}
                 {/*TODO - Create HeaderNavigation component*/}
                 <nav>
-                    <ul>
+                    <FlexContainer as={"ul"}>
                         {/*TODO - Add link to id attribute*/}
                         <li>
                             <a href="#">Home</a>
@@ -31,21 +31,19 @@ export function Header() {
                         <li>
                             <a href="#">Contact</a>
                         </li>
-                    </ul>
+                    </FlexContainer>
                 </nav>
 
                 {/*TODO - Add FlexContainer styled component*/}
                 {/*TODO - Create Socials component*/}
-                <div>
-                    <ul>
-                        {/*TODO - Add links to socials*/}
-                        <li><a href="#"></a>1</li>
-                        <li><a href="#"></a>2</li>
-                        <li><a href="#"></a>3</li>
-                    </ul>
-                </div>
-            </div>
-        </header>
+                <FlexContainer as={"ul"}>
+                    {/*TODO - Add links to socials*/}
+                    <li><a href="#"></a>Icon 1</li>
+                    <li><a href="#"></a>Icon 2</li>
+                    <li><a href="#"></a>Icon 3</li>
+                </FlexContainer>
+            </FlexContainer>
+        </FlexContainer>
     );
 }
 
