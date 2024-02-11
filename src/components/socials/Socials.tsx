@@ -1,14 +1,20 @@
 import React from 'react';
-import {FlexContainer} from "../styled/FlexContainer";
+import styled from "styled-components";
+
 
 export function Socials() {
     return (
-        <FlexContainer as={"ul"}>
+        <StyledSocials>
             {/*TODO - Add links to socials*/}
             <li><a href="#"></a>Icon 1</li>
             <li><a href="#"></a>Icon 2</li>
             <li><a href="#"></a>Icon 3</li>
-        </FlexContainer>
+        </StyledSocials>
     );
 }
 
+const StyledSocials = styled.ul`
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+`
