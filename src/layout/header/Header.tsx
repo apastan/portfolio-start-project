@@ -1,8 +1,7 @@
 import React from 'react';
-import {FlexContainer} from "../../components/styled/FlexContainer";
 import {Logo} from "../../components/logo/Logo";
 import {Menu} from "../../components/menu/Menu";
-import {Socilas} from "../../components/socials/Socilas";
+import {Socials} from "../../components/socials/Socials";
 import styled from "styled-components";
 
 export function Header() {
@@ -13,7 +12,7 @@ export function Header() {
 
             <FlexWrapper>
                 <Menu/>
-                <Socilas/>
+                <Socials/>
             </FlexWrapper>
         </StyledHeader>
     );

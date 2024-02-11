@@ -1,7 +1,7 @@
 import React from 'react';
 import {FlexContainer} from "../styled/FlexContainer";
 
-export function Socilas() {
+export function Socials() {
     return (
         <FlexContainer as={"ul"}>
             {/*TODO - Add links to socials*/}
@@ -11,3 +11,4 @@ export function Socilas() {
         </FlexContainer>
     );
 }
+
