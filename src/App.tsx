@@ -1,18 +1,13 @@
 import './App.css';
 import styled from 'styled-components';
 import {Header} from "./layout/header/Header";
-import {Typography} from "./components/styled/Typography";
+import {Main} from "./layout/sections/main/Main";
 
 function App() {
     return (
         <StyledApp>
             <Header/>
-            <Typography as={"h1"} sx={() => `color: red;`}>
-                Hi 👋,
-                My name is
-                <span>Pavan MG</span>
-                I build things for web
-            </Typography>
+            <Main/>
         </StyledApp>
     );
 }
