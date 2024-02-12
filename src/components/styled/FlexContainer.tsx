@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-type FlexContainerPropsType = {
+export type FlexContainerPropsType = {
     flexDirection?: "row" | "row-reverse" | "column" | "column-reverse"
     flexWrap?: "nowrap" | "wrap" | "wrap-reverse"
     justifyContent?: "flex-start" | "flex-end" | "center" | "space-between" | "space-around"
