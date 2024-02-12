@@ -4,6 +4,7 @@ import {Header} from "./layout/header/Header";
 import {Main} from "./layout/sections/main/Main";
 import {Technologies} from "./layout/sections/technologies/Technologies";
 import {Projects} from "./layout/sections/projects/Projects";
+import {Contacts} from "./layout/sections/contacts/Contacts";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Main/>
             <Technologies/>
             <Projects/>
+            <Contacts/>
         </StyledApp>
     );
 }
