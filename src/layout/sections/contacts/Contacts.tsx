@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/styled/SectionTitle";
+import {ContactDetails} from "./contact-details/ContactDetails";
 
 export function Contacts() {
     return (
         <StyledContacts>
             <SectionTitle>For any questions please mail me:</SectionTitle>
             <Email>hi@pavanmg.in</Email>
-            {/* TODO - Create ContactsDetails component*/}
+            <ContactDetails/>
         </StyledContacts>
     );
 }
