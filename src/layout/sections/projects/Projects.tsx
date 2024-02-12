@@ -15,7 +15,7 @@ const ProjectsMockData = [
     {
         imgSrc: project1Img,
         altText: "Alt Text",
-        title: "Project Tile goes here",
+        title: "Project Title goes here",
         description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
         techStack: ["HTML", "JavaScript", "SASS", "React"],
         linkToProject: "#",
@@ -24,7 +24,7 @@ const ProjectsMockData = [
     {
         imgSrc: project2Img,
         altText: "Alt Text",
-        title: "Project Tile goes here",
+        title: "Project Title goes here",
         description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
         techStack: ["HTML", "JavaScript", "SASS", "React"],
         linkToProject: "#",
@@ -33,7 +33,7 @@ const ProjectsMockData = [
     {
         imgSrc: project3Img,
         altText: "Alt Text",
-        title: "Project Tile goes here",
+        title: "Project Title goes here",
         description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
         techStack: ["HTML", "JavaScript", "SASS", "React"],
         linkToProject: "#",
@@ -41,7 +41,7 @@ const ProjectsMockData = [
     }, {
         imgSrc: project4Img,
         altText: "Alt Text",
-        title: "Project Tile goes here",
+        title: "Project Title goes here",
         description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
         techStack: ["HTML", "JavaScript", "SASS", "React"],
         linkToProject: "#",
@@ -49,7 +49,7 @@ const ProjectsMockData = [
     }, {
         imgSrc: project5Img,
         altText: "Alt Text",
-        title: "Project Tile goes here",
+        title: "Project Title goes here",
         description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
         techStack: ["HTML", "JavaScript", "SASS", "React"],
         linkToProject: "#",
@@ -57,7 +57,7 @@ const ProjectsMockData = [
     }, {
         imgSrc: project6Img,
         altText: "Alt Text",
-        title: "Project Tile goes here",
+        title: "Project Title goes here",
         description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
         techStack: ["HTML", "JavaScript", "SASS", "React"],
         linkToProject: "#",
@@ -72,7 +72,7 @@ export function Projects() {
             <Description>Things I’ve built so far</Description>
             <UlFlexContainer as={"ul"} flexWrap={"wrap"} justifyContent={"space-between"}>
                 {
-                    ProjectsMockData.map((project) => <Project projectData={project}/>)
+                    ProjectsMockData.map((project, index) => <Project projectData={project} key={index}/>)
                 }
             </UlFlexContainer>
         </StyledProjects>
@@ -84,7 +84,7 @@ const StyledProjects = styled.section`
 `
 
 const Description = styled.p`
-
+    text-align: center;
 `
 
 const UlFlexContainer = styled(FlexContainer)<FlexContainerPropsType>`
