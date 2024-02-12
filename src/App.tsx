@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {Header} from "./layout/header/Header";
 import {Main} from "./layout/sections/main/Main";
 import {Technologies} from "./layout/sections/technologies/Technologies";
+import {Projects} from "./layout/sections/projects/Projects";
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <Header/>
             <Main/>
             <Technologies/>
+            <Projects/>
         </StyledApp>
     );
 }
