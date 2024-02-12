@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
+import {Link} from "../../../../components/link/Link";
+import {FlexContainer} from "../../../../components/styled/FlexContainer";
 
 
 type ProjectPropsType = {
@@ -25,6 +27,27 @@ export function Project(props: ProjectPropsType) {
             <Description>{description}</Description>
             <TechStack>Tech stack : {techStack.join(", ")}</TechStack>
             {/* TODO - Create IconLink Component */}
+            <FlexContainer justifyContent={"space-around"}>
+                <Link
+                    iconSettings={{
+                        iconId: "linkToProjectBlack",
+                        width: "20px",
+                        height: "20px",
+                        viewBox: "0 0 20px 20px"
+                    }}
+                    href={linkToProject}>
+                    Live Preview
+                </Link>
+                <Link iconSettings={{
+                    iconId: "linkToGitHubProjectPageBlack",
+                    width: "20px",
+                    height: "20px",
+                    viewBox: "0 0 20px 20px"
+                }}
+                      href={linkToGithub}>
+                    View Code
+                </Link>
+            </FlexContainer>
         </StyledProject>
     );
 }
