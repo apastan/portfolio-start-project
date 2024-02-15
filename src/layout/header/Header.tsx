@@ -10,7 +10,7 @@ export function Header() {
     return (
         <StyledHeader>
             <Container>
-                <ModifiedFlexContainer justifyContent={"space-between"}>
+                <ModifiedFlexContainer justifyContent={"space-between"} alignItems={"center"}>
                     <Logo/>
                     <FlexWrapper>
                         <Menu/>
@@ -23,14 +23,15 @@ export function Header() {
 }
 
 const StyledHeader = styled.header`
-
+    margin-top: 40px; // figma - 41px
+    margin-bottom: 220px;
 `
 
 const ModifiedFlexContainer = styled(FlexContainer)`
-    // padding-right: 11px;
+    // padding-right: 11px; // figma - 11px
 `
 
 const FlexWrapper = styled.div`
     display: flex;
-    gap: 51px;
+    gap: 50px; // figma 51px
 `
