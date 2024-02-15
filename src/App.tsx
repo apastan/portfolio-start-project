@@ -4,7 +4,7 @@ import {Main} from "./layout/sections/main/Main";
 import {Technologies} from "./layout/sections/technologies/Technologies";
 import {Projects} from "./layout/sections/projects/Projects";
 import {Contacts} from "./layout/sections/contacts/Contacts";
-import {Footer} from "./layout/sections/footer/Footer";
+import {Footer} from "./layout/footer/Footer";
 import {Container} from "./components/styled/Container";
 
 function App() {

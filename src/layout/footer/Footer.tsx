@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
-import {FlexContainer} from "../../../components/styled/FlexContainer";
-import {Menu} from "../../../components/menu/Menu";
-import {Container} from "../../../components/styled/Container";
+import {FlexContainer} from "../../components/styled/FlexContainer";
+import {Menu} from "../../components/menu/Menu";
+import {Container} from "../../components/styled/Container";
 
 export function Footer() {
     return (
@@ -12,7 +12,7 @@ export function Footer() {
                     <Menu/>
                     <Copyright>
                         {/*TODO - Add real info*/}
-                        Built by <a href="/">Pavan MG</a> with Love & Coffee
+                        Built by <a href="/public">Pavan MG</a> with Love & Coffee
                     </Copyright>
                 </FlexContainer>
             </ModifiedContainer>
