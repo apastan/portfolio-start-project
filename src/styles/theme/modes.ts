@@ -2,6 +2,7 @@ type AppTheme = {
     colors: {
         appBackground: string,
         // primaryText: string,
+        headerMenuText: string
         socialIconsHeader: string,
         h1: string,
         h2: string,
@@ -21,6 +22,7 @@ export const lightTheme: AppTheme = {
     colors: {
         appBackground: "#FFFFFF",
         // primaryText: "#666666",
+        headerMenuText: "#666666",
         socialIconsHeader: "#666666",
         h1: "#42446E",
         h2: "#42446E",
@@ -41,6 +43,7 @@ export const darkTheme: AppTheme = {
         appBackground: "#191919",
         // primaryText: "",
         socialIconsHeader: "#A7A7A7",
+        headerMenuText: "#A7A7A7",
         h1: "#D9D9D9",
         h2: "#CCCCCC",
         h3: "#A7A7A7",

@@ -1,26 +1,23 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../styles/theme/theme";
 
 
 export function Menu() {
     return (
         <StyledNav>
             <ul>
-                {/*TODO - Add link to id attribute*/}
                 <li>
-                    <a href="/#">Home</a>
-                </li>
-                {/*                <li>
-                    <a href="#">About</a>
-                </li>*/}
-                <li>
-                    <a href="/#techstack">Tech Stack</a>
+                    <Link href="/#">Home</Link>
                 </li>
                 <li>
-                    <a href="/#projects">Projects</a>
+                    <Link href="/#techstack">Tech Stack</Link>
                 </li>
                 <li>
-                    <a href="/#contacts">Contact</a>
+                    <Link href="/#projects">Projects</Link>
+                </li>
+                <li>
+                    <Link href="/#contacts">Contact</Link>
                 </li>
             </ul>
         </StyledNav>
@@ -30,7 +27,17 @@ export function Menu() {
 const StyledNav = styled.nav`
     ul {
         display: flex;
-        gap: 60px; // На мекете дичь
+        gap: 60px; // figma - different values
         list-style-type: none;
     }
+`
+
+const Link = styled.a`
+    text-decoration: none;
+    color: ${props => props.theme.colors.headerMenuText};
+    font-family: ${theme.fonts.secondaryFontFamily};
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px; // ??
+    letter-spacing: 0px;
 `
