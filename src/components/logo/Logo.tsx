@@ -1,11 +1,16 @@
 import React from 'react';
+import styled from "styled-components";
+import logo from "../../assets/images/logo.png";
 
 export function Logo() {
     return (
-        <a href="#">
-            {/*TODO - insert logo and fill alt attribute*/}
-            {/*<img src="" alt=""/>*/}
-            Logo
-        </a>
+        <StyledLogo href="#">
+            {/* TODO - insert real logo */}
+            <img src={logo} alt="Logo" width="97px" height="59px"/>
+        </StyledLogo>
     );
 }
+
+const StyledLogo = styled.a`
+    height: 59px; //figma - 59px
+`
