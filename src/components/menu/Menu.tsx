@@ -8,19 +8,19 @@ export function Menu() {
             <ul>
                 {/*TODO - Add link to id attribute*/}
                 <li>
-                    <a href="#">Home</a>
+                    <a href="/#">Home</a>
                 </li>
-                <li>
+                {/*                <li>
                     <a href="#">About</a>
+                </li>*/}
+                <li>
+                    <a href="/#techstack">Tech Stack</a>
                 </li>
                 <li>
-                    <a href="#">Tech Stack</a>
+                    <a href="/#projects">Projects</a>
                 </li>
                 <li>
-                    <a href="#">Projects</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <a href="/#contacts">Contact</a>
                 </li>
             </ul>
         </StyledNav>
@@ -33,5 +33,4 @@ const StyledNav = styled.nav`
         gap: 60px; // На мекете дичь
         list-style-type: none;
     }
-    
 `

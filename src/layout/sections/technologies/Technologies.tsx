@@ -7,7 +7,7 @@ import {SectionSubtitle} from "../../../components/styled/SectionSubtitle";
 
 export function Technologies() {
     return (
-        <StyledTechnologies>
+        <StyledTechnologies id="techstack">
             <SectionTitle>My Tech Stack</SectionTitle>
             <SectionSubtitle>Technologies I’ve been working with recently</SectionSubtitle>
             <FlexContainer alignItems={"center"} flexWrap={"wrap"}>

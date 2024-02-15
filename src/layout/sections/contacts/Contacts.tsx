@@ -5,7 +5,7 @@ import {ContactDetails} from "./contact-details/ContactDetails";
 
 export function Contacts() {
     return (
-        <StyledContacts>
+        <StyledContacts id="contacts">
             <SectionTitle>For any questions please mail me:</SectionTitle>
             <Email>hi@pavanmg.in</Email>
             <ContactDetails/>

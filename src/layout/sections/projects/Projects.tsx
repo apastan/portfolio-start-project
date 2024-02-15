@@ -67,7 +67,7 @@ const ProjectsMockData = [
 
 export function Projects() {
     return (
-        <StyledProjects>
+        <StyledProjects id="projects">
             <SectionTitle>Projects</SectionTitle>
             <Description>Things I’ve built so far</Description>
             <UlFlexContainer as={"ul"} flexWrap={"wrap"} justifyContent={"space-between"}>
