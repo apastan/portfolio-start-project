@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components"
+import {theme} from "./theme/theme";
 
 export const GlobalStyles = createGlobalStyle`
     *, :before, :after {
@@ -8,8 +9,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: "DM Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-family: ${theme.fonts.primaryFontFamily};
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
