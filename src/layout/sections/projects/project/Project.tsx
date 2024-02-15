@@ -33,7 +33,7 @@ export function Project(props: ProjectPropsType) {
                         iconId: "linkToProjectBlack",
                         width: "20px",
                         height: "20px",
-                        viewBox: "0 0 20px 20px"
+                        viewBox: "0 0 20 20"
                     }}
                     href={linkToProject}>
                     Live Preview
@@ -42,7 +42,7 @@ export function Project(props: ProjectPropsType) {
                     iconId: "linkToGitHubProjectPageBlack",
                     width: "20px",
                     height: "20px",
-                    viewBox: "0 0 20px 20px"
+                    viewBox: "0 0 20 20"
                 }}
                       href={linkToGithub}>
                     View Code
