@@ -20,7 +20,7 @@ export function Technologies() {
                 <Icon iconId={"tailwind"} height={"80"} width={"80"} viewBox={"0 10 120 120"}/>
                 <Icon iconId={"sass"} height={"100"} width={"100"} viewBox={"0 -15 120 120"}/>
                 <Icon iconId={"git"} height={"100"} width={"100"} viewBox={"-7 -7 120 120"}/>
-                <Icon iconId={"githubBlack"} height={"120"} width={"120"} viewBox={"-15 -15 120 120"}/>
+                <Icon iconId={"github"} height={"120"} width={"120"} viewBox={"-15 -15 120 120"}/>
             </FlexContainer>
         </StyledTechnologies>
     );
