@@ -39,11 +39,7 @@ const Introduce = styled.h1`
     font-family: ${theme.fonts.secondaryFontFamily};
     font-size: 58px;
     font-weight: 700;
-    //font-size: inherit;
-    //font-weight: inherit;
-    line-height: 70px;
-    letter-spacing: -1px;
-    text-align: left;
+    letter-spacing: -1px; // ??
 `
 
 const Slogan = styled(Introduce)`

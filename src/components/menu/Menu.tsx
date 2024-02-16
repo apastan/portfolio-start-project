@@ -38,6 +38,5 @@ const Link = styled.a`
     font-family: ${theme.fonts.secondaryFontFamily};
     font-size: 20px;
     font-weight: 500;
-    line-height: 26px; // ??
     letter-spacing: 0px;
 `
