@@ -23,8 +23,7 @@ export function Header() {
 }
 
 const StyledHeader = styled.header`
-    margin-top: 40px; // figma - 41px
-    margin-bottom: 220px;
+    
 `
 
 const ModifiedFlexContainer = styled(FlexContainer)`
