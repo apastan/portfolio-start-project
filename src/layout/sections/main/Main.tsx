@@ -20,7 +20,8 @@ export function Main() {
             {/*TODO - Add abstraction pseudo element*/}
             {/*TODO - Add alternative text*/}
             {/*TODO - Change photo*/}
-            <Photo src={photo} alt="" width="349px" height="349px"/>
+
+            <Photo src={photo} alt="" width="340px" height="340px"/>
         </StyledMain>
     );
 }
@@ -55,12 +56,9 @@ const Name = styled.span`
 `
 
 const Photo = styled.img`
-    width: 340px;
-    height: 340px;
-    //border: 9px solid;
+    width: 358px; // 340 + 9 + 9
+    height: 358px; // 340 + 9 + 9
     background: ${theme.colors.imageBorderGradient};
     padding: 9px;
-
     border-radius: 230px;
 `
-
