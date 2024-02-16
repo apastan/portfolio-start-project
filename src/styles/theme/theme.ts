@@ -1,7 +1,7 @@
 const FALLBACK_FONTS = `-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif`;
-const PRIMARY_FONT_FAMILY = `\"DM Sans\"`;
-const SECONDARY_FONT_FAMILY = `\"Poppins\"`;
+const PRIMARY_FONT_FAMILY = `\"Poppins\"`;
+const SECONDARY_FONT_FAMILY = `\"DM Sans\"`;
 
 export const theme = {
     fonts: {

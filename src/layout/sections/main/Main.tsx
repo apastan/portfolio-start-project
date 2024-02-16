@@ -36,7 +36,6 @@ const Title = styled.div`
 
 const Introduce = styled.h1`
     color: ${props => props.theme.colors.h1};
-    font-family: ${theme.fonts.secondaryFontFamily};
     font-size: 58px;
     font-weight: 700;
     letter-spacing: -1px; // ??
