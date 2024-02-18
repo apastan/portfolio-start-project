@@ -35,4 +35,10 @@ const StyledTechnologies = styled.section`
         display: block;
         margin: auto;
     }
+
+    margin-bottom: 200px;
+
+    ${FlexContainer} {
+        row-gap: 100px;
+    }
 `
