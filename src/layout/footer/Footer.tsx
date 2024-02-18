@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {FlexContainer} from "../../components/styled/FlexContainer";
 import {Menu} from "../../components/menu/Menu";
 import {Container} from "../../components/styled/Container";
+import {theme} from "../../styles/theme/theme";
 
 export function Footer() {
     return (
@@ -21,7 +22,12 @@ export function Footer() {
 }
 
 const StyledFooter = styled.footer`
-
+    a {
+        color: ${props => props.theme.colors.textFooter};
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
 `
 
 const ModifiedContainer = styled(Container)`
@@ -33,5 +39,16 @@ const ModifiedContainer = styled(Container)`
 `
 
 const Copyright = styled.small`
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
 
+
+    a {
+        background: ${theme.colors.gradientText};
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
 `
