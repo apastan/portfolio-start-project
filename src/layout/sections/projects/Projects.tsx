@@ -84,7 +84,7 @@ export function Projects() {
 }
 
 const StyledProjects = styled.section`
-
+    margin-bottom: 200px;
 `
 
 const UlFlexContainer = styled(FlexContainer)<FlexContainerPropsType>`
