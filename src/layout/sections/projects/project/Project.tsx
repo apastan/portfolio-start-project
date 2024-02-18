@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from "styled-components";
+import styled, {useTheme} from "styled-components";
 import {Link} from "../../../../components/link/Link";
 import {FlexContainer} from "../../../../components/styled/FlexContainer";
 
@@ -20,13 +20,17 @@ export function Project(props: ProjectPropsType) {
 
     const {imgSrc, altText, title, description, techStack, linkToProject, linkToGithub} = props.projectData
 
+    const theme = useTheme();
+
     return (
         <StyledProject>
             <ProjectImage src={imgSrc} alt={altText}/>
             <ProjectDescription>
                 <ProjectTitle>{title}</ProjectTitle>
                 <Description>{description}</Description>
-                <TechStack>Tech stack : {techStack.join(", ")}</TechStack>
+                <TechStack>
+                    <span>Tech stack:</span> {techStack.join(", ")}
+                </TechStack>
                 {/* TODO - Create IconLink Component */}
                 <FlexContainer sx="column-gap: 50px;">
                     <Link
@@ -37,7 +41,10 @@ export function Project(props: ProjectPropsType) {
                             viewBox: "0 0 20 20",
                             fill: "none"
                         }}
-                        href={linkToProject}>
+                        href={linkToProject}
+                        // @ts-ignore
+                        //sx={`font-size: 16px;font-weight: 400;line-height: 26px;color: ${theme.colors.projectLinks}`}
+                    >
                         Live Preview
                     </Link>
                     <Link iconSettings={{
@@ -72,6 +79,13 @@ const ProjectImage = styled.img`
 
 const ProjectDescription = styled.div`
     padding: 25px 30px;
+
+    a {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: ${props => props.theme.colors.projectLinks}
+    }
 `
 
 const ProjectTitle = styled.h3`
@@ -84,6 +98,7 @@ const ProjectTitle = styled.h3`
 const Description = styled.p`
     font-size: 18px;
     font-weight: 300;
+    line-height: 26px;
     color: ${props => props.theme.colors.projectDescription};
     margin-bottom: 12px;
 `
@@ -91,5 +106,10 @@ const Description = styled.p`
 const TechStack = styled.p`
     font-size: 14px;
     font-weight: 300;
-    color: ${props => props.theme.color.projectStack};
+    color: ${props => props.theme.colors.projectStack};
+    margin-bottom: 21px;
+
+    span {
+        font-weight: 400;
+    }
 `
