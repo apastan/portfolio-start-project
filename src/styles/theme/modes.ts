@@ -1,20 +1,21 @@
-type AppTheme = {
+export type AppTheme = {
     colors: {
-        appBackground: string,
-        // primaryText: string,
+        appBackground: string
+        // primaryText: string
         headerMenuText: string
-        socialIconsHeader: string,
-        h1: string,
-        h2: string,
-        h3: string,
-        projectHeading: string,
-        projectDescription: string,
-        projectStack: string,
-        projectLinks: string,
-        // logoHeader: string,
-        logoFooter: string,
-        textFooter: string,
-        textCopyright: string,
+        socialIconsHeader: string
+        h1: string
+        h2: string
+        h3: string
+        projectHeading: string
+        projectDescription: string
+        projectStack: string
+        projectLinks: string
+        // logoHeader: string
+        contactMeHeading: string
+        logoFooter: string
+        textFooter: string
+        textCopyright: string
     }
 }
 
@@ -32,6 +33,7 @@ export const lightTheme: AppTheme = {
         projectDescription: "#666666",
         projectStack: "#42446E",
         projectLinks: "#000000",
+        contactMeHeading: "#1E0E62",
         logoFooter: "#42446E",
         textFooter: "#42446E",
         textCopyright: "#666666",
@@ -52,6 +54,7 @@ export const darkTheme: AppTheme = {
         projectDescription: "#CCCCCC",
         projectStack: "#CCCCCC",
         projectLinks: "#FFFFFF",
+        contactMeHeading: "#CCCCCC",
         logoFooter: "#A7A7A7",
         textFooter: "#A7A7A7",
         textCopyright: "#A7A7A7",
