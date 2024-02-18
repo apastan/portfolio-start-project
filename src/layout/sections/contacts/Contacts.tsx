@@ -2,13 +2,16 @@ import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/styled/SectionTitle";
 import {ContactDetails} from "./contact-details/ContactDetails";
+import {Container} from "../../../components/styled/Container";
 
 export function Contacts() {
     return (
         <StyledContacts id="contacts">
-            <SectionTitle>For any questions please mail me:</SectionTitle>
-            <Email>hi@pavanmg.in</Email>
-            <ContactDetails/>
+            <Container>
+                <SectionTitle>For any questions please mail me:</SectionTitle>
+                <Email>hi@pavanmg.in</Email>
+                <ContactDetails/>
+            </Container>
         </StyledContacts>
     );
 }

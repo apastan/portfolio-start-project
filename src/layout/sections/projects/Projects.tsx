@@ -9,6 +9,7 @@ import project4Img from "../../../assets/images/projects/project-4.png"
 import project5Img from "../../../assets/images/projects/project-5.png"
 import project6Img from "../../../assets/images/projects/project-6.png"
 import {Project} from "./project/Project";
+import {Container} from "../../../components/styled/Container";
 
 
 const ProjectsMockData = [
@@ -68,13 +69,15 @@ const ProjectsMockData = [
 export function Projects() {
     return (
         <StyledProjects id="projects">
-            <SectionTitle>Projects</SectionTitle>
-            <Description>Things I’ve built so far</Description>
-            <UlFlexContainer as={"ul"} flexWrap={"wrap"} justifyContent={"space-between"}>
-                {
-                    ProjectsMockData.map((project, index) => <Project projectData={project} key={index}/>)
-                }
-            </UlFlexContainer>
+            <Container>
+                <SectionTitle>Projects</SectionTitle>
+                <Description>Things I’ve built so far</Description>
+                <UlFlexContainer as={"ul"} flexWrap={"wrap"} justifyContent={"space-between"}>
+                    {
+                        ProjectsMockData.map((project, index) => <Project projectData={project} key={index}/>)
+                    }
+                </UlFlexContainer>
+            </Container>
         </StyledProjects>
     );
 }
