@@ -23,7 +23,9 @@ export function Header() {
 }
 
 const StyledHeader = styled.header`
-    
+    svg {
+        fill: ${props => props.theme.colors.socialIconsHeader};
+    }
 `
 
 const ModifiedFlexContainer = styled(FlexContainer)`
