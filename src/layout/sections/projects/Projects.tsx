@@ -10,6 +10,7 @@ import project5Img from "../../../assets/images/projects/project-5.png"
 import project6Img from "../../../assets/images/projects/project-6.png"
 import {Project} from "./project/Project";
 import {Container} from "../../../components/styled/Container";
+import {SectionSubtitle} from "../../../components/styled/SectionSubtitle";
 
 
 const ProjectsMockData = [
@@ -71,8 +72,8 @@ export function Projects() {
         <StyledProjects id="projects">
             <Container>
                 <SectionTitle>Projects</SectionTitle>
-                <Description>Things I’ve built so far</Description>
-                <UlFlexContainer as={"ul"} flexWrap={"wrap"} justifyContent={"space-between"}>
+                <SectionSubtitle>Things I’ve built so far</SectionSubtitle>
+                <UlFlexContainer as={"ul"} flexWrap={"wrap"} justifyContent={"space-between"} sx="row-gap:60px;">
                     {
                         ProjectsMockData.map((project, index) => <Project projectData={project} key={index}/>)
                     }
@@ -84,10 +85,6 @@ export function Projects() {
 
 const StyledProjects = styled.section`
 
-`
-
-const Description = styled.p`
-    text-align: center;
 `
 
 const UlFlexContainer = styled(FlexContainer)<FlexContainerPropsType>`
