@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 
 export type FlexContainerPropsType = {
@@ -7,6 +7,7 @@ export type FlexContainerPropsType = {
     justifyContent?: "flex-start" | "flex-end" | "center" | "space-between" | "space-around"
     alignItems?: "flex-start" | "flex-end" | "center" | "baseline" | "stretch"
     alignContent?: "stretch" | "flex-start" | "flex-end"
+    sx?: string
 }
 
 export const FlexContainer = styled.div<FlexContainerPropsType>`
@@ -16,4 +17,7 @@ export const FlexContainer = styled.div<FlexContainerPropsType>`
     justify-content: ${props => (props.justifyContent ?? "flex-start")};
     align-items: ${props => (props.alignItems ?? "flex-start")};
     align-content: ${props => (props.alignContent ?? "stretch")};
+    //min-height: inherit;
+    ${props => props.sx && css`${props.sx}`};
+    //width: 100%;
 `
