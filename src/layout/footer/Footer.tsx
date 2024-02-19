@@ -42,6 +42,7 @@ const Copyright = styled.small`
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
+    color: ${props => props.theme.colors.textCopyright};
 
 
     a {
