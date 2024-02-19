@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, {useTheme} from "styled-components";
-import {Link} from "../../../../components/link/Link";
 import {FlexContainer} from "../../../../components/styled/FlexContainer";
+import {PseudoIconLink} from "../../../../components/pseudo-icon-link/PseudoIconLink";
 
 
 type ProjectPropsType = {
@@ -33,43 +33,38 @@ export function Project(props: ProjectPropsType) {
                 </TechStack>
                 {/* TODO - Create IconLink Component */}
                 <FlexContainer sx="column-gap: 50px;">
-                    <Link
-                        iconSettings={{
-                            iconId: "linkToProjectBlack",
-                            width: "20px",
-                            height: "20px",
-                            viewBox: "0 0 20 20",
-                            fill: "none"
-                        }}
+                    <PseudoIconLink
                         href={linkToProject}
                         // @ts-ignore
                         //sx={`font-size: 16px;font-weight: 400;line-height: 26px;color: ${theme.colors.projectLinks}`}
+
+                        // @ts-ignore
+                        // iconId={theme === "light" ? "projectLinkLightTheme" : "projectLinkDarkTheme"}
+                        iconUrl={theme.colors.projectLinkIcon}
                     >
                         Live Preview
-                    </Link>
-                    <Link iconSettings={{
-                        iconId: "linkToGitHubProjectPageBlack",
-                        width: "20px",
-                        height: "20px",
-                        viewBox: "0 0 20 20",
-                        fill: "none"
-                    }}
-                          href={linkToGithub}>
+                    </PseudoIconLink>
+                    <PseudoIconLink
+                        href={linkToGithub}
+
+                        // @ts-ignore
+                        // iconId={theme === "light" ? "gitHubProjectLinkLightTheme" : "gitHubProjectLinkDarkTheme"}
+                        iconUrl={theme.colors.projectLinkGitHubIcon}
+                    >
                         View Code
-                    </Link>
+                    </PseudoIconLink>
                 </FlexContainer>
             </ProjectDescription>
         </StyledProject>
-    )
-        ;
+    );
 }
 
 const StyledProject = styled.li`
+    background-color: ${props => props.theme.colors.projectBackground};
     width: 375px;
     min-height: 570px;
     border-radius: 20px;
     box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
-    background: rgb(255, 255, 255);
 `
 
 const ProjectImage = styled.img`
