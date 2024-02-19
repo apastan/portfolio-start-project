@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {IconLink} from "../icon-link/IconLink";
+import {IconLink} from "../links/icon-link/IconLink";
 
 
 export function Socials() {

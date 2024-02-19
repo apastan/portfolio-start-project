@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, {useTheme} from "styled-components";
 import {FlexContainer} from "../../../../components/styled/FlexContainer";
-import {PseudoIconLink} from "../../../../components/pseudo-icon-link/PseudoIconLink";
+import {PseudoIconLink} from "../../../../components/links/pseudo-icon-link/PseudoIconLink";
 
 
 type ProjectPropsType = {
