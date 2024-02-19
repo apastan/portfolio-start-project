@@ -4,6 +4,7 @@ import photo from "../../../assets/images/avatar.jpg"
 import {FlexContainer} from "../../../components/styled/FlexContainer";
 import {theme} from "../../../styles/theme/theme";
 import {Container} from "../../../components/styled/Container";
+import abstract from "../../../assets/images/abstract.svg";
 
 export function Main() {
     return (
@@ -33,7 +34,6 @@ export function Main() {
 }
 
 const StyledMain = styled.section`
-    border: 1px solid red;
     min-height: 90vh;
     display: flex;
 `
@@ -106,6 +106,21 @@ const PhotoWrapper = styled.div`
         margin: -9px;
         border-radius: inherit;
         background: ${theme.colors.imageBorderGradient};
+    }
+
+    &::after {
+        position: absolute;
+        top: -42%;
+        left: -42%;
+        //transform: translate(10%, 10%);
+
+        background-image: url(${abstract});
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: "";
+        display: block;
+        width: 628px;
+        height: 628px;
     }
 `
 
