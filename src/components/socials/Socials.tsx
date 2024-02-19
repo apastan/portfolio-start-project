@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {Link} from "../link/Link";
+import {IconLink} from "../icon-link/IconLink";
 
 
 export function Socials() {
@@ -8,28 +8,28 @@ export function Socials() {
         <StyledSocials>
             {/*TODO - Add links to socials*/}
             <li>
-                <Link href="#" iconSettings={{
+                <IconLink href="#" iconSettings={{
                     iconId: "githubHeader",
                     width: "30px",
                     height: "30px",
                     viewBox: "0 0 30 30",
-                }}></Link>
+                }}></IconLink>
             </li>
             <li>
-                <Link href="#" iconSettings={{
+                <IconLink href="#" iconSettings={{
                     iconId: "twitterHeader",
                     width: "30px",
                     height: "30px",
                     viewBox: "0 0 32 32",
-                }}></Link>
+                }}></IconLink>
             </li>
             <li>
-                <Link href="#" iconSettings={{
+                <IconLink href="#" iconSettings={{
                     iconId: "linkedinHeader",
                     width: "30px",
                     height: "30px",
                     viewBox: "0 0 30 30",
-                }}></Link>
+                }}></IconLink>
             </li>
         </StyledSocials>
     );
