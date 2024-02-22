@@ -5,10 +5,16 @@ import {Technologies} from "./layout/sections/technologies/Technologies";
 import {Projects} from "./layout/sections/projects/Projects";
 import {Contacts} from "./layout/sections/contacts/Contacts";
 import {Footer} from "./layout/footer/Footer";
+import {ThemeProvider} from "styled-components";
+import {GlobalStyles} from "./styles/Global.styled";
+import React from "react";
+import {lightTheme} from "./styles/theme/modes";
+
 
 function App() {
     return (
-        <>
+        <ThemeProvider theme={lightTheme}>
+            <GlobalStyles/>
             <Header/>
             {/*  TODO - Wrap with <main>  */}
             <Main/>
@@ -16,7 +22,7 @@ function App() {
             <Projects/>
             <Contacts/>
             <Footer/>
-        </>
+        </ThemeProvider>
     );
 }
 

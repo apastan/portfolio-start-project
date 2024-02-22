@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {GlobalStyles} from "./styles/Global.styled";
-import {ThemeProvider} from "styled-components";
-import {lightTheme} from "./styles/theme/modes";
 
 
 const root = ReactDOM.createRoot(
@@ -13,10 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <React.StrictMode>
-        <ThemeProvider theme={lightTheme}>
-            <GlobalStyles/>
-            <App/>
-        </ThemeProvider>
+        <App/>
     </React.StrictMode>
 );
 
