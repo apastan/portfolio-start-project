@@ -7,15 +7,28 @@ import {Contacts} from "./layout/sections/contacts/Contacts";
 import {Footer} from "./layout/footer/Footer";
 import {ThemeProvider} from "styled-components";
 import {GlobalStyles} from "./styles/Global.styled";
-import React from "react";
-import {lightTheme} from "./styles/theme/modes";
+import React, {useState} from "react";
+import {darkTheme, lightTheme, START_MODE} from "./styles/theme/modes";
 
 
 function App() {
+
+    const [mode, setMode] = useState<"light" | "dark">(START_MODE)
+    const isLightMode = mode === "light";
+
+    const toggleMode = () => {
+        if (mode === "light") {
+            setMode("dark");
+        } else {
+            setMode("light")
+        }
+        // console.log('сменили тему на: ', mode);
+    }
+
     return (
-        <ThemeProvider theme={lightTheme}>
+        <ThemeProvider theme={isLightMode ? lightTheme : darkTheme}>
             <GlobalStyles/>
-            <Header/>
+            <Header toggleMode={toggleMode}/>
             {/*  TODO - Wrap with <main>  */}
             <Main/>
             <Technologies/>

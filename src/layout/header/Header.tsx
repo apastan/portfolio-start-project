@@ -5,8 +5,13 @@ import {Socials} from "../../components/socials/Socials";
 import styled from "styled-components";
 import {Container} from "../../components/styled/Container";
 import {FlexContainer} from "../../components/styled/FlexContainer";
+import {ThemeSwitcher} from "./theme-switcher/themeSwitcher";
 
-export function Header() {
+type HeaderPropsType = {
+    toggleMode: () => void
+}
+
+export function Header(props: HeaderPropsType) {
     return (
         <StyledHeader>
             <Container>
@@ -14,6 +19,7 @@ export function Header() {
                     <Logo/>
                     <FlexWrapper>
                         <Menu/>
+                        <ThemeSwitcher toggleMode={props.toggleMode}/>
                         <Socials/>
                     </FlexWrapper>
                 </ModifiedFlexContainer>
@@ -35,4 +41,5 @@ const ModifiedFlexContainer = styled(FlexContainer)`
 const FlexWrapper = styled.div`
     display: flex;
     gap: 50px; // figma 51px
+    align-items: center;
 `

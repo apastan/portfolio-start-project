@@ -1,11 +1,19 @@
 import styled from "styled-components";
 
-export function ThemeSwitcher() {
+type themeSwitcherPropsType = {
+    toggleMode: () => void;
+    isLightMode?: boolean
+}
+
+export function ThemeSwitcher({toggleMode, isLightMode = true}: themeSwitcherPropsType) {
+    // const [isChecked, setCheck] = useState(false)
     return (
         <Wrapper>
             <label>
+                {/*<input className="visually-hidden" type="checkbox" aria-label="Switch light/dark mode"*/}
+                {/*       checked={isChecked} onClick={() => setCheck(!isChecked)}/>*/}
                 <input className="visually-hidden" type="checkbox" aria-label="Switch light/dark mode"
-                       defaultChecked={true}/>
+                       defaultChecked={isLightMode} onClick={() => toggleMode()}/>
                 <Slider></Slider>
             </label>
         </Wrapper>
@@ -54,7 +62,7 @@ const Wrapper = styled.div`
         background-color: ${dark};
         border-radius: 50px;
         cursor: pointer;
-        border: 1px solid #A7A7A7;
+        border: 1px solid #C5C5C5;
         box-sizing: content-box;
     }
 
