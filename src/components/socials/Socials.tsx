@@ -20,7 +20,7 @@ export function Socials() {
                     iconId: "twitterHeader",
                     width: "30px",
                     height: "30px",
-                    viewBox: "0 0 32 32",
+                    viewBox: "2 2 30 30",
                 }} ariaAttrs={{"aria-label": "Link to Twitter"}}></IconLink>
             </li>
             <li>
