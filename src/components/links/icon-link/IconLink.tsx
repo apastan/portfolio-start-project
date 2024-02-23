@@ -29,25 +29,26 @@ const StyledIconLink = styled.a<StyledIconLinkPropsType>`
     /*    svg + span {
             margin-left: 10px;
         }*/
-    border-radius: 100px;
+    display: block;
+    border-radius: 999px;
 
     &:hover svg {
-        border-radius: 50px;
+        border-radius: 999px;
         animation: pulse 2s infinite;
         @keyframes pulse {
             0% {
                 transform: scale(0.95);
-                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+                box-shadow: 0 0 0 0 ${props => props.theme.colors.menuIconLinkHover[0]};
             }
 
             70% {
                 transform: scale(1);
-                box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 10px ${props => props.theme.colors.menuIconLinkHover[1]};
             }
 
             100% {
                 transform: scale(0.95);
-                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 0 ${props => props.theme.colors.menuIconLinkHover[3]};
             }
         }
     }
