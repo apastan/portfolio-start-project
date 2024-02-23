@@ -58,6 +58,15 @@ const Wrapper = styled.div`
     width: 60px;
     height: 30px;
     border-radius: 50px;
+    box-sizing: content-box;
+    border-top: 5px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-left: 5px solid transparent;
+
+    &:hover {
+        border-color: ${props => props.theme.colors.menuLinkHover};
+    }
 
     label {
         position: absolute;

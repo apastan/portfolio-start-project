@@ -69,7 +69,7 @@ export const darkTheme: AppTheme = {
         // primaryText: "",
         socialIconsHeader: "#A7A7A7",
         headerMenuText: "#A7A7A7",
-        menuLinkHover: "rgba(255, 255, 255, 0.15)",
+        menuLinkHover: "rgba(255, 255, 255, 0.2)",
         h1: "#D9D9D9",
         h2: "#CCCCCC",
         h3: "#A7A7A7",
