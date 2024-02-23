@@ -29,5 +29,26 @@ const StyledIconLink = styled.a<StyledIconLinkPropsType>`
             margin-left: 10px;
         }*/
 
+    &:hover svg {
+        border-radius: 50px;
+        animation: pulse 2s infinite;
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+            }
+
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            }
+        }
+    }
+
     ${props => props.sx && css`${props.sx}`};
 `
