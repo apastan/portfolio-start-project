@@ -39,4 +39,11 @@ const Link = styled.a`
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: ${props => props.theme.colors.menuLinkHover};
+    }
 `

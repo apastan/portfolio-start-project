@@ -6,6 +6,7 @@ export type AppTheme = {
         appBackground: string
         // primaryText: string
         headerMenuText: string
+        menuLinkHover: string
         socialIconsHeader: string
         h1: string
         h2: string
@@ -37,6 +38,7 @@ export const lightTheme: AppTheme = {
         appBackground: "#FFFFFF",
         // primaryText: "#666666",
         headerMenuText: "#666666",
+        menuLinkHover: "rgba(35, 39, 47, .05)",
         socialIconsHeader: "#666666",
         h1: "#42446E",
         h2: "#42446E",
@@ -67,6 +69,7 @@ export const darkTheme: AppTheme = {
         // primaryText: "",
         socialIconsHeader: "#A7A7A7",
         headerMenuText: "#A7A7A7",
+        menuLinkHover: "rgba(255, 255, 255, 0.15)",
         h1: "#D9D9D9",
         h2: "#CCCCCC",
         h3: "#A7A7A7",
