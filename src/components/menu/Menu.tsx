@@ -41,9 +41,9 @@ const Link = styled.a`
     letter-spacing: 0px;
     padding: 6px 12px;
     border-radius: 999px;
-    transition: 0.3s;
 
     &:hover {
+        transition: 0.3s;
         background-color: ${props => props.theme.colors.menuLinkHover};
     }
 `
