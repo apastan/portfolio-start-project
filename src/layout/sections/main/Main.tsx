@@ -14,7 +14,7 @@ export function Main() {
                     <Title>
                         {/*  <br> is normal?  */}
                         <Introduce>
-                            Hi 👋,<br/>
+                            Hi <span className="hiAnimation">👋</span>,<br/>
                             My name is<br/>
                             {/* TODO - Update name*/}
                             <Name> Pavan MG</Name>
@@ -47,6 +47,17 @@ const Introduce = styled.h1`
     font-size: 58px;
     font-weight: 700;
     letter-spacing: -1px; // ??
+
+    span.hiAnimation {
+        display: inline-block;
+        animation: mymove 3s infinite;
+    }
+
+    @keyframes mymove {
+        50% {
+            transform: rotate(90deg);
+        }
+    }
 `
 
 const Slogan = styled(Introduce)`
