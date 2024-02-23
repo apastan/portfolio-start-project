@@ -13,7 +13,7 @@ export function Socials() {
                     width: "30px",
                     height: "30px",
                     viewBox: "0 0 30 30",
-                }}></IconLink>
+                }} ariaAttrs={{"aria-label": "Link to GitHub"}}></IconLink>
             </li>
             <li>
                 <IconLink href="#" iconSettings={{
@@ -21,7 +21,7 @@ export function Socials() {
                     width: "30px",
                     height: "30px",
                     viewBox: "0 0 32 32",
-                }}></IconLink>
+                }} ariaAttrs={{"aria-label": "Link to Twitter"}}></IconLink>
             </li>
             <li>
                 <IconLink href="#" iconSettings={{
@@ -29,7 +29,7 @@ export function Socials() {
                     width: "30px",
                     height: "30px",
                     viewBox: "0 0 30 30",
-                }}></IconLink>
+                }} ariaAttrs={{"aria-label": "Link to LinkedIn"}}></IconLink>
             </li>
         </StyledSocials>
     );

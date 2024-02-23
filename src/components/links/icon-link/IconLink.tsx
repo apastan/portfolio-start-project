@@ -7,12 +7,13 @@ type IconLinkPropsType = {
     iconSettings: IconPropsType
     href: string
     sx?: string
+    ariaAttrs?: { [index: string]: string }
 }
 
-export function IconLink({iconSettings, href, sx}: IconLinkPropsType) {
+export function IconLink({iconSettings, href, sx, ariaAttrs}: IconLinkPropsType) {
 
     return (
-        <StyledIconLink href={href} sx={sx || ""}>
+        <StyledIconLink href={href} sx={sx || ""} {...ariaAttrs}>
             <FlexContainer justifyContent={"center"} alignItems={"center"}>
                 <Icon {...iconSettings}></Icon>
             </FlexContainer>
@@ -28,6 +29,7 @@ const StyledIconLink = styled.a<StyledIconLinkPropsType>`
     /*    svg + span {
             margin-left: 10px;
         }*/
+    border-radius: 100px;
 
     &:hover svg {
         border-radius: 50px;
