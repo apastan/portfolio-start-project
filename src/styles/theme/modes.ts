@@ -1,5 +1,7 @@
 export type AppTheme = {
     mode: "dark" | "light",
+    aria: { ariaLabelThemeSwitcher: string },
+
     colors: {
         appBackground: string
         // primaryText: string
@@ -21,6 +23,8 @@ export type AppTheme = {
         textFooter: string
         textCopyright: string
         gitHubLogo: string
+
+        //
     }
 }
 
@@ -28,6 +32,7 @@ export const START_MODE: "light" | "dark" = "light";
 
 export const lightTheme: AppTheme = {
     mode: "light",
+    aria: {ariaLabelThemeSwitcher: "Use Dark Mode"},
     colors: {
         appBackground: "#FFFFFF",
         // primaryText: "#666666",
@@ -49,11 +54,14 @@ export const lightTheme: AppTheme = {
         textFooter: "#42446E",
         textCopyright: "#666666",
         gitHubLogo: "#000000"
+
+
     }
 }
 
 export const darkTheme: AppTheme = {
     mode: "dark",
+    aria: {ariaLabelThemeSwitcher: "Use Light Mode"},
     colors: {
         appBackground: "#191919",
         // primaryText: "",
