@@ -1,5 +1,6 @@
 export type AppTheme = {
     mode: "dark" | "light",
+    globalFocusColor: string;
     aria: { ariaLabelThemeSwitcher: string },
 
     colors: {
@@ -65,6 +66,7 @@ export const lightTheme: AppTheme = {
 
 export const darkTheme: AppTheme = {
     mode: "dark",
+    globalFocusColor: "rgba(255, 255, 255, 0.8)",
     aria: {ariaLabelThemeSwitcher: "Use Light Mode"},
     colors: {
         appBackground: "#191919",

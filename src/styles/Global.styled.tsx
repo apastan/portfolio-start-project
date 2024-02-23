@@ -32,4 +32,13 @@ export const GlobalStyles = createGlobalStyle`
         clip: rect(0 0 0 0);
         overflow: hidden;
     }
+
+
+    *:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px ${props => {
+            // @ts-ignore
+            return props.theme.globalFocusColor;
+        }};
+    }
 `
