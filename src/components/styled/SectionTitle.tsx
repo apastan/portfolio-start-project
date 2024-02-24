@@ -5,6 +5,6 @@ export const SectionTitle = styled.h2`
     font-weight: 700;
     color: ${props => props.theme.colors.h2};
     text-align: center;
-    
-    margin-bottom: 50px;
+
+    margin-bottom: 15px;
 `

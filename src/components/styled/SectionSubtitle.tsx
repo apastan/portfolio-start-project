@@ -6,5 +6,5 @@ export const SectionSubtitle = styled.h3`
     color: ${props => props.theme.colors.h3};
     text-align: center;
 
-    margin-bottom: 110px;
+    margin-bottom: 70px;
 `
