@@ -68,7 +68,7 @@ const Introduce = styled.h1`
 
     ${theme.media.xs} {
         // TODO - Резиновый шрифт
-        font-size: calc((100vw - 360px) / (576 - 360) * (50 - 30) + 30px);
+        font-size: calc((100vw - 360px) / (575 - 360) * (50 - 30) + 30px);
     }
 
     span.hiAnimation {

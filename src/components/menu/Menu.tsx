@@ -68,6 +68,6 @@ const Link = styled.a`
     }
 
     ${theme.media.lg} {
-        font-size: calc((100vw - 768px) / (992 - 768) * (20 - 16) + 16px);
+        font-size: calc((100vw - 768px) / (991 - 768) * (20 - 16) + 16px);
     }
 `
