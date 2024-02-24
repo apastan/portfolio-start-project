@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/apastan/portfolio-start-project/static/css/main.e6c13ad2.css",
-    "main.js": "/apastan/portfolio-start-project/static/js/main.2388d87b.js",
+    "main.js": "/apastan/portfolio-start-project/static/js/main.d23166fc.js",
     "static/js/787.25eaef86.chunk.js": "/apastan/portfolio-start-project/static/js/787.25eaef86.chunk.js",
     "static/media/project-6.png": "/apastan/portfolio-start-project/static/media/project-6.c7981a9e335a41a34d47.png",
     "static/media/project-5.png": "/apastan/portfolio-start-project/static/media/project-5.3908f704561d04d6029a.png",
@@ -14,11 +14,11 @@
     "static/media/abstract.svg": "/apastan/portfolio-start-project/static/media/abstract.c65fbe57561ec9002874a3c7c3e7efb6.svg",
     "index.html": "/apastan/portfolio-start-project/index.html",
     "main.e6c13ad2.css.map": "/apastan/portfolio-start-project/static/css/main.e6c13ad2.css.map",
-    "main.2388d87b.js.map": "/apastan/portfolio-start-project/static/js/main.2388d87b.js.map",
+    "main.d23166fc.js.map": "/apastan/portfolio-start-project/static/js/main.d23166fc.js.map",
     "787.25eaef86.chunk.js.map": "/apastan/portfolio-start-project/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.2388d87b.js"
+    "static/js/main.d23166fc.js"
   ]
 }
