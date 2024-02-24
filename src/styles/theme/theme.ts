@@ -12,5 +12,13 @@ export const theme = {
         gradientText: "linear-gradient(90.00deg, #13B0F5, #E70FAA)",
         // gradientText: "linear-gradient(90.00deg, rgb(19, 176, 245),rgb(231, 15, 170))",
         imageBorderGradient: "linear-gradient(#E70FAA, #13B0F5)"
+    },
+    media: {
+        xs: "@media screen and (max-width: 575px)", // less than 575px
+        md: "@media screen and (max-width: 767px)", // less than 767px
+        lg: "@media screen and (max-width: 991px)", // less than 991px
+        xl: "@media screen and (max-width: 1199px)", // less than 1199px
+        xxl: "@media screen and (max-width: 1399px)", // less than 1399px
+
     }
 }
