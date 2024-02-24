@@ -2,6 +2,7 @@ import React from 'react';
 import styled, {useTheme} from "styled-components";
 import {FlexContainer} from "../../../../components/styled/FlexContainer";
 import {PseudoIconLink} from "../../../../components/links/pseudo-icon-link/PseudoIconLink";
+import {theme} from "../../../../styles/theme/theme";
 
 
 type ProjectPropsType = {
@@ -32,7 +33,7 @@ export function Project(props: ProjectPropsType) {
                     <span>Tech stack:</span> {techStack.join(", ")}
                 </TechStack>
                 {/* TODO - Create IconLink Component */}
-                <FlexContainer sx="column-gap: 50px;">
+                <FlexContainer justifyContent={"space-between"}>
                     <PseudoIconLink
                         href={linkToProject}
                         // @ts-ignore
@@ -61,14 +62,23 @@ export function Project(props: ProjectPropsType) {
 
 const StyledProject = styled.li`
     background-color: ${props => props.theme.colors.projectBackground};
-    width: 375px;
-    min-height: 570px;
+    width: 65%;
+    min-height: 550px;
     border-radius: 20px;
     box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+
+    ${theme.media.lg} {
+        width: 70%;
+    }
+
+    ${theme.media.xs} {
+        width: 100%;
+    }
 `
 
 const ProjectImage = styled.img`
-    width: 375px;
+    width: 100%;
+    height: auto;
     display: block;
 `
 
@@ -88,6 +98,10 @@ const ProjectTitle = styled.h3`
     font-weight: 500;
     color: ${props => props.theme.colors.projectHeading};
     margin-bottom: 17px;
+
+    ${theme.media.xs} {
+        font-size: calc((100vw - 360px) / (575 - 360) * (28 - 20) + 20px);
+    }
 `
 
 const Description = styled.p`

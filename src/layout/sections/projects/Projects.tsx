@@ -73,7 +73,10 @@ export function Projects() {
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 <SectionSubtitle>Things I’ve built so far</SectionSubtitle>
-                <UlFlexContainer as={"ul"} flexWrap={"wrap"} justifyContent={"space-between"} sx="row-gap:60px;">
+                <UlFlexContainer as={"ul"}
+                                 flexWrap={"wrap"}
+                                 justifyContent={"space-around"}
+                                 sx="row-gap:60px;column-gap:20px;">
                     {
                         ProjectsMockData.map((project, index) => <Project projectData={project} key={index}/>)
                     }
