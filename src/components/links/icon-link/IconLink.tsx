@@ -13,10 +13,8 @@ type IconLinkPropsType = {
 export function IconLink({iconSettings, href, sx, ariaAttrs}: IconLinkPropsType) {
 
     return (
-        <StyledIconLink href={href} sx={sx || ""} {...ariaAttrs}>
-            <FlexContainer justifyContent={"center"} alignItems={"center"}>
-                <Icon {...iconSettings}></Icon>
-            </FlexContainer>
+        <StyledIconLink href={href} as={"a"} sx={sx || ""} {...ariaAttrs}>
+            <Icon {...iconSettings}></Icon>
         </StyledIconLink>
     );
 }
@@ -25,32 +23,14 @@ type StyledIconLinkPropsType = {
     sx: string
 }
 
-const StyledIconLink = styled.a<StyledIconLinkPropsType>`
-    /*    svg + span {
-            margin-left: 10px;
-        }*/
-    display: block;
+const StyledIconLink = styled(FlexContainer)<StyledIconLinkPropsType>`
     border-radius: 999px;
+    padding: 7px;
+    background-color: transparent;
 
-    &:hover svg {
-        border-radius: 999px;
-        animation: pulse 2s infinite;
-        @keyframes pulse {
-            0% {
-                transform: scale(0.95);
-                box-shadow: 0 0 0 0 ${props => props.theme.colors.menuIconLinkHover[0]};
-            }
-
-            70% {
-                transform: scale(1);
-                box-shadow: 0 0 0 10px ${props => props.theme.colors.menuIconLinkHover[1]};
-            }
-
-            100% {
-                transform: scale(0.95);
-                box-shadow: 0 0 0 0 ${props => props.theme.colors.menuIconLinkHover[3]};
-            }
-        }
+    &:hover {
+        transition: 0.3s;
+        background-color: ${props => props.theme.colors.menuIconLinkHover};
     }
 
     ${props => props.sx && css`${props.sx}`};

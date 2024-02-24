@@ -8,7 +8,7 @@ export type AppTheme = {
         // primaryText: string
         headerMenuText: string
         menuLinkHover: string
-        menuIconLinkHover: string[],
+        menuIconLinkHover: string,
         socialIconsHeader: string
         h1: string
         h2: string
@@ -35,13 +35,14 @@ export const START_MODE: "light" | "dark" = "light";
 
 export const lightTheme: AppTheme = {
     mode: "light",
+    globalFocusColor: "rgba(25, 25, 25, 0.8)",
     aria: {ariaLabelThemeSwitcher: "Use Dark Mode"},
     colors: {
         appBackground: "#FFFFFF",
         // primaryText: "#666666",
         headerMenuText: "#666666",
         menuLinkHover: "rgba(35, 39, 47, .05)",
-        menuIconLinkHover: ["rgba(0, 0, 0, 0.7)", "rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0)"],
+        menuIconLinkHover: "rgba(35, 39, 47, .07)",
         socialIconsHeader: "#666666",
         h1: "#42446E",
         h2: "#42446E",
@@ -74,7 +75,7 @@ export const darkTheme: AppTheme = {
         socialIconsHeader: "#A7A7A7",
         headerMenuText: "#A7A7A7",
         menuLinkHover: "rgba(255, 255, 255, 0.2)",
-        menuIconLinkHover: ["rgba(255, 255, 255, 0.7)", "rgba(255, 255, 255, 0.1)", "rgba(255, 255, 255, 0)"],
+        menuIconLinkHover: "rgba(255, 255, 255, 0.15)",
         h1: "#D9D9D9",
         h2: "#CCCCCC",
         h3: "#A7A7A7",
