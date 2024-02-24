@@ -3,19 +3,20 @@ import styled from "styled-components";
 import {FlexContainer} from "../../../../components/styled/FlexContainer";
 import {Logo} from "../../../../components/logo/Logo";
 import {Socials} from "../../../../components/socials/Socials";
+import {theme} from "../../../../styles/theme/theme";
 
 export function ContactDetails() {
     return (
         <StyledContactDetails>
-            <FlexContainer justifyContent={"space-between"}>
+            <StyledFlexContainer>
                 {/*TODO - Style logo*/}
                 <Logo/>
-                <FlexContainer alignItems="center">
+                <ContactsFlexContainer>
                     <Phone href="tel:+91 12345 09876">+91 12345 09876</Phone>
                     <Email href="email:info@example.com">info@example.com</Email>
                     <Socials/>
-                </FlexContainer>
-            </FlexContainer>
+                </ContactsFlexContainer>
+            </StyledFlexContainer>
         </StyledContactDetails>
     );
 }
@@ -31,10 +32,6 @@ const Email = styled.a`
 const StyledContactDetails = styled.div`
     margin-top: 200px;
 
-    a + a, a + ul {
-        margin-left: 60px;
-    }
-
     ${Phone}, ${Email} {
         font-size: 18px;
         font-weight: 400;
@@ -49,7 +46,25 @@ const StyledContactDetails = styled.div`
     }
 `
 
+const StyledFlexContainer = styled(FlexContainer)`
+    justify-content: space-between;
 
-const StyledSocials = styled(Socials)`
-    margin-left: 100px;
+    ${theme.media.xl} {
+        justify-content: center;
+    }
+`
+
+const ContactsFlexContainer = styled(FlexContainer)`
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & {
+        gap: 80px;
+    }
+
+    ${theme.media.md} {
+        flex-direction: column;
+        gap: 20px;
+    }
 `
