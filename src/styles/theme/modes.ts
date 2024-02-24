@@ -31,7 +31,7 @@ export type AppTheme = {
     }
 }
 
-export const START_MODE: "light" | "dark" = "light";
+export const INITIAL_THEME_MODE: "light" | "dark" = "light";
 
 export const lightTheme: AppTheme = {
     mode: "light",

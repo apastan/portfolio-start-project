@@ -8,21 +8,20 @@ import {Footer} from "./layout/footer/Footer";
 import {ThemeProvider} from "styled-components";
 import {GlobalStyles} from "./styles/Global.styled";
 import React, {useState} from "react";
-import {darkTheme, lightTheme, START_MODE} from "./styles/theme/modes";
+import {darkTheme, INITIAL_THEME_MODE, lightTheme} from "./styles/theme/modes";
 
 
 function App() {
 
-    const [mode, setMode] = useState<"light" | "dark">(START_MODE)
-    const isLightMode = mode === "light";
+    const [themeMode, setThemeMode] = useState<"light" | "dark">(INITIAL_THEME_MODE);
+    const isLightMode = themeMode === "light";
 
     const toggleMode = () => {
-        if (mode === "light") {
-            setMode("dark");
+        if (themeMode === "light") {
+            setThemeMode("dark");
         } else {
-            setMode("light")
+            setThemeMode("light")
         }
-        // console.log('сменили тему на: ', mode);
     }
 
     return (
