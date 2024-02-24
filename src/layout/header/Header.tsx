@@ -19,8 +19,8 @@ export function Header(props: HeaderPropsType) {
                     <Logo/>
                     <FlexWrapper>
                         <Menu/>
-                        <ThemeSwitcher toggleMode={props.toggleMode}/>
                         <Socials/>
+                        <ThemeSwitcher toggleMode={props.toggleMode}/>
                     </FlexWrapper>
                 </ModifiedFlexContainer>
             </Container>
