@@ -6,6 +6,7 @@ import styled from "styled-components";
 import {Container} from "../../components/styled/Container";
 import {FlexContainer} from "../../components/styled/FlexContainer";
 import {ThemeSwitcher} from "./theme-switcher/themeSwitcher";
+import {theme} from "../../styles/theme/theme";
 
 type HeaderPropsType = {
     toggleMode: () => void
@@ -42,4 +43,12 @@ const FlexWrapper = styled.div`
     display: flex;
     gap: 50px; // figma 51px
     align-items: center;
+    justify-content: end;
+    padding: 10px 0;
+
+    flex-grow: 1;
+
+    ${theme.media.xs} {
+        gap: 20px;
+    }
 `

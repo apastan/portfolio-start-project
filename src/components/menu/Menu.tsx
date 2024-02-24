@@ -25,10 +25,24 @@ export function Menu() {
 }
 
 const StyledNav = styled.nav`
+    ${theme.media.xl} {
+        flex-grow: 1;
+    }
+
     ul {
         display: flex;
         gap: 60px; // figma - different values
         list-style-type: none;
+    }
+
+    ${theme.media.lg} {
+        ul {
+            gap: 15px;
+        }
+    }
+
+    ${theme.media.md} {
+        display: none;
     }
 `
 
@@ -45,5 +59,9 @@ const Link = styled.a`
     &:hover {
         transition: 0.3s;
         background-color: ${props => props.theme.colors.menuLinkHover};
+    }
+
+    ${theme.media.lg} {
+        font-size: calc((100vw - 768px) / (992 - 768) * (20 - 16) + 16px);
     }
 `

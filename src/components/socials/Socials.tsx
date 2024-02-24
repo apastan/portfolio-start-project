@@ -37,6 +37,6 @@ export function Socials() {
 
 const StyledSocials = styled.ul`
     display: flex;
-    gap: 20px;
+    gap: 10px;
     list-style-type: none;
 `
