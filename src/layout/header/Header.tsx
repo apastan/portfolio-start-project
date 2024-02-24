@@ -19,7 +19,7 @@ export function Header(props: HeaderPropsType) {
                 <ModifiedFlexContainer justifyContent={"space-between"} alignItems={"center"}>
                     <Logo/>
                     <FlexWrapper>
-                        <Menu/>
+                        <Menu isFooterMenu={false}/>
                         <Socials/>
                         <ThemeSwitcher toggleMode={props.toggleMode}/>
                     </FlexWrapper>

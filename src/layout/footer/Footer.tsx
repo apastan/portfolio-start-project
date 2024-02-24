@@ -9,13 +9,13 @@ export function Footer() {
     return (
         <StyledFooter>
             <ModifiedContainer>
-                <FlexContainer justifyContent={"space-between"}>
-                    <Menu/>
+                <StyledFlexContainer>
+                    <Menu isFooterMenu={true}/>
                     <Copyright>
                         {/*TODO - Add real info*/}
-                        Built by <a href="/public">Pavan MG</a> with Love & Coffee
+                        Built by <a href="/public">Pavan MG</a> with&nbsp;Love&nbsp;&&nbsp;Coffee
                     </Copyright>
-                </FlexContainer>
+                </StyledFlexContainer>
             </ModifiedContainer>
         </StyledFooter>
     );
@@ -38,12 +38,20 @@ const ModifiedContainer = styled(Container)`
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 `
 
+const StyledFlexContainer = styled(FlexContainer)`
+    justify-content: space-between;
+
+    ${theme.media.md} {
+        justify-content: center;
+    }
+`
+
 const Copyright = styled.small`
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
     color: ${props => props.theme.colors.textCopyright};
-
+    text-align: center;
 
     a {
         background: ${theme.colors.gradientText};

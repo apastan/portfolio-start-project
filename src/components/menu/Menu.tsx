@@ -3,7 +3,11 @@ import styled from "styled-components";
 import {theme} from "../../styles/theme/theme";
 
 
-export function Menu() {
+type MenuPropsType = {
+    isFooterMenu: boolean;
+}
+
+export function Menu({isFooterMenu}: MenuPropsType) {
     return (
         <StyledNav>
             <ul>
@@ -16,9 +20,11 @@ export function Menu() {
                 <li>
                     <Link href="/#projects">Projects</Link>
                 </li>
-                <li>
-                    <Link href="/#contacts">Contact</Link>
-                </li>
+                {!isFooterMenu && (
+                    <li>
+                        <Link href="/#contacts">Contact</Link>
+                    </li>
+                )}
             </ul>
         </StyledNav>
     );
