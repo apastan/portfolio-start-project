@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/apastan/portfolio-start-project/static/css/main.e6c13ad2.css",
+    "main.js": "/apastan/portfolio-start-project/static/js/main.2388d87b.js",
+    "static/js/787.25eaef86.chunk.js": "/apastan/portfolio-start-project/static/js/787.25eaef86.chunk.js",
+    "static/media/project-6.png": "/apastan/portfolio-start-project/static/media/project-6.c7981a9e335a41a34d47.png",
+    "static/media/project-5.png": "/apastan/portfolio-start-project/static/media/project-5.3908f704561d04d6029a.png",
+    "static/media/project-1.png": "/apastan/portfolio-start-project/static/media/project-1.90feb40a7228a171a519.png",
+    "static/media/project-2.png": "/apastan/portfolio-start-project/static/media/project-2.93bfc8d012801c535faa.png",
+    "static/media/project-3.png": "/apastan/portfolio-start-project/static/media/project-3.31411742aef87b6eca7b.png",
+    "static/media/project-4.png": "/apastan/portfolio-start-project/static/media/project-4.4c1faa705b5e80c15185.png",
+    "static/media/icons-sprite.svg": "/apastan/portfolio-start-project/static/media/icons-sprite.a5dcf195792a1373c22fecda9e14e18b.svg",
+    "static/media/avatar.jpg": "/apastan/portfolio-start-project/static/media/avatar.430ef1081bfab3f14cb1.jpg",
+    "static/media/abstract.svg": "/apastan/portfolio-start-project/static/media/abstract.c65fbe57561ec9002874a3c7c3e7efb6.svg",
+    "index.html": "/apastan/portfolio-start-project/index.html",
+    "main.e6c13ad2.css.map": "/apastan/portfolio-start-project/static/css/main.e6c13ad2.css.map",
+    "main.2388d87b.js.map": "/apastan/portfolio-start-project/static/js/main.2388d87b.js.map",
+    "787.25eaef86.chunk.js.map": "/apastan/portfolio-start-project/static/js/787.25eaef86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.2388d87b.js"
+  ]
+}
