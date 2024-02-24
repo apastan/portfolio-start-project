@@ -10,7 +10,7 @@ export function Main() {
     return (
         <StyledMain>
             <Container>
-                <FlexContainer justifyContent={"space-between"} alignItems={"center"} sx="height: 100%">
+                <StyledFlexContainer sx="height: 100%">
                     <Title>
                         {/*  <br> is normal?  */}
                         <Introduce>
@@ -25,13 +25,23 @@ export function Main() {
                     {/*TODO - Add alternative text*/}
                     {/*TODO - Change photo*/}
                     <PhotoWrapper>
-                        <Photo src={photo} alt="" width="340px" height="340px"/>
+                        <Photo src={photo} alt=""/>
                     </PhotoWrapper>
-                </FlexContainer>
+                </StyledFlexContainer>
             </Container>
         </StyledMain>
     );
 }
+
+const StyledFlexContainer = styled(FlexContainer)`
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+`
 
 const StyledMain = styled.section`
     min-height: 90vh;
@@ -44,16 +54,29 @@ const Title = styled.div`
 
 const Introduce = styled.h1`
     color: ${props => props.theme.colors.h1};
-    font-size: 58px;
+    font-size: 56px;
     font-weight: 700;
     letter-spacing: -1px; // ??
 
-    span.hiAnimation {
-        display: inline-block;
-        animation: mymove 3s infinite;
+    ${theme.media.lg} {
+        text-align: center;
     }
 
-    @keyframes mymove {
+    ${theme.media.md} {
+        font-size: 50px;
+    }
+
+    ${theme.media.xs} {
+        // TODO - Резиновый шрифт
+        font-size: calc((100vw - 360px) / (576 - 360) * (50 - 30) + 30px);
+    }
+
+    span.hiAnimation {
+        display: inline-block;
+        animation: hello 3s infinite;
+    }
+
+    @keyframes hello {
         50% {
             transform: rotate(90deg);
         }
@@ -121,8 +144,8 @@ const PhotoWrapper = styled.div`
 
     &::after {
         position: absolute;
-        top: -42%;
-        left: -42%;
+        top: -30%;
+        left: -30%;
         //transform: translate(10%, 10%);
 
         background-image: url(${abstract});
@@ -130,12 +153,23 @@ const PhotoWrapper = styled.div`
         background-repeat: no-repeat;
         content: "";
         display: block;
-        width: 628px;
-        height: 628px;
+        width: 540px;
+        height: 540px;
+    }
+
+    ${theme.media.xxl} {
+        &::after {
+            display: none;
+        }
     }
 `
 
 const Photo = styled.img`
     border-radius: 230px;
     display: block; // or display: flex;
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+        height: auto;
+    }
 `
