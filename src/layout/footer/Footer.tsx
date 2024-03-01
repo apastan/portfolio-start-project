@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from "styled-components";
 import {FlexContainer} from "../../components/styled/FlexContainer";
 import {Menu} from "../../components/menu/Menu";

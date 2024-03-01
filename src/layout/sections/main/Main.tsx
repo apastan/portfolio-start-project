@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from "styled-components";
 import photo from "../../../assets/images/avatar.jpg"
 import {FlexContainer} from "../../../components/styled/FlexContainer";

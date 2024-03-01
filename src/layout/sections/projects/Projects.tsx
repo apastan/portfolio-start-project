@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from "styled-components";
 import {FlexContainer, FlexContainerPropsType} from "../../../components/styled/FlexContainer";
 import {SectionTitle} from "../../../components/styled/SectionTitle";

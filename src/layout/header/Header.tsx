@@ -1,4 +1,3 @@
-import React from 'react';
 import {Logo} from "../../components/logo/Logo";
 import {Menu} from "../../components/menu/Menu";
 import {Socials} from "../../components/socials/Socials";

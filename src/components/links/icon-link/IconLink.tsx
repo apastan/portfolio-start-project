@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, {css} from "styled-components";
 import {Icon, IconPropsType} from "../../icon/Icon";
 import {FlexContainer} from "../../styled/FlexContainer";

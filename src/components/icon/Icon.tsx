@@ -1,4 +1,3 @@
-import React from 'react';
 import iconSprite from "../../assets/images/icons-sprite.svg";
 
 
