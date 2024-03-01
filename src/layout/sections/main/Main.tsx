@@ -12,7 +12,6 @@ export function Main() {
             <Container>
                 <StyledFlexContainer sx="height: 100%">
                     <Title>
-                        {/*  <br> is normal?  */}
                         <Introduce>
                             Hi <span className="hiAnimation">👋</span>,<br/>
                             My name is<br/>
@@ -56,7 +55,7 @@ const Introduce = styled.h1`
     color: ${props => props.theme.colors.h1};
     font-size: 56px;
     font-weight: 700;
-    letter-spacing: -1px; // ??
+    letter-spacing: -1px;
 
     ${theme.media.lg} {
         text-align: center;
@@ -67,7 +66,6 @@ const Introduce = styled.h1`
     }
 
     ${theme.media.xs} {
-        // TODO - Резиновый шрифт
         font-size: calc((100vw - 360px) / (575 - 360) * (50 - 30) + 30px);
     }
 
@@ -89,7 +87,6 @@ const Slogan = styled(Introduce)`
 
 const Name = styled.span`
     background: ${theme.colors.gradientText};
-    //background: linear-gradient(90.00deg, #13B0F5, #E70FAA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

@@ -6,19 +6,16 @@ type themeSwitcherPropsType = {
 }
 
 export function ThemeSwitcher({toggleMode, isLightMode = true}: themeSwitcherPropsType) {
-    // const [isChecked, setCheck] = useState(false)
     const theme = useTheme();
     return (
         <Wrapper>
             <label>
-                {/*<input className="visually-hidden" type="checkbox" aria-label="Switch light/dark mode"*/}
-                {/*       checked={isChecked} onClick={() => setCheck(!isChecked)}/>*/}
                 <input className="visually-hidden" type="checkbox"
                        aria-label={
                            // @ts-ignore
                            isLightMode && theme.aria.ariaLabelThemeSwitcher}
                        defaultChecked={isLightMode} onClick={() => toggleMode()}/>
-                <Slider></Slider>
+                <Slider/>
             </label>
         </Wrapper>
     );
@@ -40,7 +37,6 @@ const Slider = styled.span`
 
     &::before {
         content: "";
-        //text-shadow: 0px 0px 16px #ffa500;
         position: absolute;
         top: 2px;
         left: 2px;

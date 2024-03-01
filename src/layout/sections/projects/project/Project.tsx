@@ -37,10 +37,6 @@ export function Project(props: ProjectPropsType) {
                     <PseudoIconLink
                         href={linkToProject}
                         // @ts-ignore
-                        //sx={`font-size: 16px;font-weight: 400;line-height: 26px;color: ${theme.colors.projectLinks}`}
-
-                        // @ts-ignore
-                        // iconId={theme === "light" ? "projectLinkLightTheme" : "projectLinkDarkTheme"}
                         iconUrl={theme.colors.projectLinkIcon}
                     >
                         Live Preview
@@ -49,7 +45,6 @@ export function Project(props: ProjectPropsType) {
                         href={linkToGithub}
 
                         // @ts-ignore
-                        // iconId={theme === "light" ? "gitHubProjectLinkLightTheme" : "gitHubProjectLinkDarkTheme"}
                         iconUrl={theme.colors.projectLinkGitHubIcon}
                     >
                         View Code

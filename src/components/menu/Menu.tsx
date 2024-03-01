@@ -37,7 +37,7 @@ const StyledNav = styled.nav`
 
     ul {
         display: flex;
-        gap: 60px; // figma - different values
+        gap: 60px;
         list-style-type: none;
     }
 

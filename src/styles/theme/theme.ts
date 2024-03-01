@@ -10,7 +10,6 @@ export const theme = {
     },
     colors: {
         gradientText: "linear-gradient(90.00deg, #13B0F5, #E70FAA)",
-        // gradientText: "linear-gradient(90.00deg, rgb(19, 176, 245),rgb(231, 15, 170))",
         imageBorderGradient: "linear-gradient(#E70FAA, #13B0F5)"
     },
     media: {

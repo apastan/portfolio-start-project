@@ -5,7 +5,6 @@ export type AppTheme = {
 
     colors: {
         appBackground: string
-        // primaryText: string
         headerMenuText: string
         menuLinkHover: string
         menuIconLinkHover: string,
@@ -18,7 +17,6 @@ export type AppTheme = {
         projectDescription: string
         projectStack: string
         projectLinks: string
-        // logoHeader: string
         projectLinkGitHubIcon: string
         projectLinkIcon: string
         contactMeHeading: string
@@ -26,8 +24,6 @@ export type AppTheme = {
         textFooter: string
         textCopyright: string
         gitHubLogo: string
-
-        //
     }
 }
 
@@ -39,7 +35,6 @@ export const lightTheme: AppTheme = {
     aria: {ariaLabelThemeSwitcher: "Use Dark Mode"},
     colors: {
         appBackground: "#FFFFFF",
-        // primaryText: "#666666",
         headerMenuText: "#666666",
         menuLinkHover: "rgba(35, 39, 47, .05)",
         menuIconLinkHover: "rgba(35, 39, 47, .07)",
@@ -47,7 +42,6 @@ export const lightTheme: AppTheme = {
         h1: "#42446E",
         h2: "#42446E",
         h3: "#42446E",
-        // logoHeader: "linear-gradient(82.16deg, rgb(19, 176, 245) -534.729%,rgb(202, 36, 180) 113.407%)",
         projectBackground: "#ffffff",
         projectHeading: "#000000",
         projectDescription: "#666666",
@@ -60,8 +54,6 @@ export const lightTheme: AppTheme = {
         textFooter: "#42446E",
         textCopyright: "#666666",
         gitHubLogo: "#000000"
-
-
     }
 }
 
@@ -71,7 +63,6 @@ export const darkTheme: AppTheme = {
     aria: {ariaLabelThemeSwitcher: "Use Light Mode"},
     colors: {
         appBackground: "#191919",
-        // primaryText: "",
         socialIconsHeader: "#A7A7A7",
         headerMenuText: "#A7A7A7",
         menuLinkHover: "rgba(255, 255, 255, 0.2)",
@@ -79,7 +70,6 @@ export const darkTheme: AppTheme = {
         h1: "#D9D9D9",
         h2: "#CCCCCC",
         h3: "#A7A7A7",
-        // logoHeader: "",
         projectBackground: "#363636",
         projectHeading: "#CCCCCC",
         projectDescription: "#CCCCCC",

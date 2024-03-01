@@ -36,17 +36,17 @@ const StyledHeader = styled.header`
 `
 
 const ModifiedFlexContainer = styled(FlexContainer)`
-    // padding-right: 11px; // figma - 11px
+
 `
 
 const FlexWrapper = styled.div`
     display: flex;
-    gap: 50px; // figma 51px
+    gap: 50px;
     align-items: center;
     justify-content: end;
     padding: 10px 0;
 
-    flex-grow: 1;
+    width: 100%;
 
     ${theme.media.xs} {
         gap: 20px;

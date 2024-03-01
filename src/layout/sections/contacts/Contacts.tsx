@@ -25,7 +25,7 @@ const Email = styled.span`
     font-size: 58px;
     font-weight: 700;
     line-height: 70px;
-    letter-spacing: 3px; // -1px - is not similar
+    letter-spacing: 3px;
 
     background: linear-gradient(90.00deg, rgb(19, 176, 245), rgb(231, 15, 170));
     -webkit-background-clip: text;
@@ -43,7 +43,7 @@ const Title = styled.h2`
     font-family: ${theme.fonts.secondaryFontFamily};
     font-size: 58px;
     font-weight: 700;
-    letter-spacing: 3px; // -1px - is not similar
+    letter-spacing: 3px;
 
     ${theme.media.lg} {
         font-size: calc((100vw - 360px) / (991 - 360) * (58 - 32) + 32px);
