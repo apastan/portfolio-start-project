@@ -13,7 +13,8 @@ export function ThemeSwitcher({toggleMode, isLightMode = true}: themeSwitcherPro
                 <input className="visually-hidden" type="checkbox"
                        aria-label={
                            // @ts-ignore
-                           isLightMode && theme.aria.ariaLabelThemeSwitcher}
+                           isLightMode && theme.aria.ariaLabelThemeSwitcher
+                       }
                        defaultChecked={isLightMode} onClick={() => toggleMode()}/>
                 <Slider/>
             </label>

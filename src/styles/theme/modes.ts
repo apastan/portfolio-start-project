@@ -1,13 +1,13 @@
 export type AppTheme = {
-    mode: "dark" | "light",
-    globalFocusColor: string;
-    aria: { ariaLabelThemeSwitcher: string },
+    mode: "dark" | "light"
+    globalFocusColor: string
+    aria: { ariaLabelThemeSwitcher: string }
 
     colors: {
         appBackground: string
         headerMenuText: string
         menuLinkHover: string
-        menuIconLinkHover: string,
+        menuIconLinkHover: string
         socialIconsHeader: string
         h1: string
         h2: string
